@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="stylesheet" href="./sass/animation.css" />
+    <link rel="stylesheet" href="./sass/media.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="mains">
+        <a href="#">
+            <div class="back_to_top"  >
+              <svg width="26" height="40" viewBox="0 0 26 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.0001 20L0.500055 39.0526L0.500055 0.947471L26.0001 20Z" fill="white"/>
+                </svg>
+                
+            </div>
+          </a>
+        <div class="nav-container">
+            <nav class="nav">
+                <div class="menu-sign">
+                    <div class="hamburger" id="hamburger">
+                        <div class="ham-lines">
+                            <div class="line-1" id="line-1"></div>
+                            <div class="line-2" id="line-2"></div>
+                        </div>
+                        <div class="menu-wrap">
+                            <div class="menu-text" id="menuopen">menu</div>
+                            <div class="menu-close" id="menuclose">close</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-name">
+                    <h2>orxin</h2>
+                </div>
+                <div class="cart">
+                    <div class="cart-1" id="cart-1">
+                        <div class="shop-bag">
+                            <img src="./images/shoppingbag.svg" alt="shopping-bag" width="23px" />
+                        </div>
+                    </div>
+                    <div class="cart-2" id="cart-2">
+                        <div class="cart-no" id="cart-no">0</div>
+                    </div>
+                    <div class="cart-open">
+                        <!-- create a checkout section here -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="nav-items" id="navlist">
+            <ul class="list uptrans">
+                <li><a href="index.html">home</a></li>
+                <li>
+                    <a href="home-2.html">Home <span class="no-cart">(no cart)</span></a>
+                </li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="project.html">projects</a></li>
+                <li><a href="pricing.html">pricing</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <div class="nav-social uptrans">
+                <p>follow us</p>
+                <div class="nav-socials-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-slack"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- shopping cart -->
+        <div class="cart_container" id="cart-container">
+
+            <div class="cart_main">
+                <div class="cart_title_close_btn">
+                    <h4 class="your_cart">Your cart</h4>
+                    <div class="close_btn_cart" id="close-btn-cart">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+
+                <div class="no_items">
+                    <p>No items found.</p>
+                    <a href="#" class="go_to_package">
+                        go to packages
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- modals -->
+        <div class="modal_container">
+            <img src="./images/modal-wallpaper.png" alt="" class="sidepaper" />
+            <img src="./images/worm.png" alt="" class="worm_modal" />
+            <div class="modal_titles">
+                <h1 class="modal_h1">Projects</h1>
+                <p class="def-subhead">We design awesome things</p>
+                <div class="modal_breadcrumb">
+                    <a href="#">Home</a>
+                    <img src="./images/arrow.svg" width="5" alt="" class="arrow" />
+                    <a href="#" class="modal_link">Projects</a>
+                </div>
+                <div class="mouse-svg">
+                    <svg width="29" height="42" viewBox="0 0 29 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="mouse-animate">
+                            <rect id="mouse-outer" x="1" y="1" width="27" height="40" rx="13.5" stroke="#7567F8"
+                                stroke-width="1.5" />
+                            <rect id="mouse-scroll" x="12" y="10" width="4" height="4" rx="3" fill="#7567F8" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+         <!-- our-projects -->
+    <div class="our-project-container">
+        <div class="projects-desc">
+          <p class="small-title">Our projects</p>
+          <h1 class="def-h1">Recent work</h1>
+          <p class="def-subhead">I'm a subhead that goes with a story.</p>
+        </div>
+  
+        <div class="project-card-wrapper">
+          <div class="project-card">
+            <div class="pr-card-img">
+              <img src="./images/orxin-m.jpg" alt="orxin" />
+            </div>
+            <div class="pr-card-text">
+              <h2>Cras ultricies mi</h2>
+              <p>Branding, Web Design</p>
+              <a href="#" class="def-btn2">view project</a>
+            </div>
+          </div>
+  
+          <div class="project-card">
+            <div class="pr-card-img">
+              <img src="./images/agirl.jpg" alt="girl" />
+            </div>
+            <div class="pr-card-text">
+              <h2>Etiam imdiet name</h2>
+              <p>Web Design, User Experiences</p>
+              <a href="#" class="def-btn2">view project</a>
+            </div>
+          </div>
+  
+          <div class="project-card">
+            <div class="pr-card-img">
+              <img src="./images/google.jpg" alt="google" />
+            </div>
+            <div class="pr-card-text">
+              <h2>Integer ante arcu</h2>
+              <p>User Interface</p>
+              <a href="#" class="def-btn2">view project</a>
+            </div>
+          </div>
+  
+          <div class="project-card">
+            <div class="pr-card-img">
+              <img src="./images/mug.jpg" alt="mug" />
+            </div>
+            <div class="pr-card-text">
+              <h2>In auctor lobortis</h2>
+              <p>Logo, User Interface</p>
+              <a href="#" class="def-btn2">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+          <!-- contact us form -->
+
+    <div class="contact_form_container">
+
+        <div class="contact_title">
+          <h4 class="small-title">Contact us</h4>
+          <h1 class="def-h1">Start your project with us</h1>
+        </div>
+        <form>
+          <div class="contact_name contact_holder">
+            <label for="name">NAME</label>
+            <input type="text" id="name" />
+          </div>
+  
+  
+          <div class="contact_email contact_holder">
+            <label for="email">EMAIL ADDRESS</label>
+            <input type="email" id="email" />
+          </div>
+  
+          <div class="message contact_holder">
+            <label for="message">MESSAGE</label>
+            <textarea id="message"></textarea>
+          </div>
+  
+          <div class="checkbox_container contact_holder">
+            <p class="checkbox_title">what are you looking for</p>
+  
+            <div class="checkbox_wrapper">
+  
+  
+              <div class="chekboxarea">
+                <input type="checkbox" hidden id="check_1" name="checkbox" class="checkinput" />
+                <label for="check_1" class="custom_check"></label>
+                <p class="checkbox_details">Web Design</p>
+              </div>
+  
+  
+              <div class="chekboxarea">
+                <input type="checkbox" hidden id="check_2" name="checkbox" class="checkinput" />
+                <label for="check_2" class="custom_check"></label>
+                <p class="checkbox_details">Development</p>
+              </div>
+  
+              <div class="chekboxarea">
+                <input type="checkbox" hidden id="check_3" name="checkbox" class="checkinput" />
+                <label for="check_3" class="custom_check"></label>
+                <p class="checkbox_details">UX Design</p>
+              </div>
+  
+  
+  
+  
+  
+              <div class="chekboxarea">
+                <input type="checkbox" hidden id="check_4" name="checkbox" class="checkinput" />
+                <label for="check_4" class="custom_check"></label>
+                <p class="checkbox_details">Branding</p>
+              </div>
+  
+              <div class="chekboxarea">
+                <input type="checkbox" hidden id="check_5" name="checkbox" class="checkinput" />
+                <label for="check_5" class="custom_check"></label>
+                <p class="checkbox_details">Graphic Design</p>
+              </div>
+  
+              <div class="chekboxarea">
+                <input type="checkbox" hidden id="check_6" name="checkbox" class="checkinput" />
+                <label for="check_6" class="custom_check"></label>
+                <p class="checkbox_details">Marketing</p>
+              </div>
+  
+            </div>
+  
+          </div>
+          <input type="submit" value="SEND REQUEST" class="submit_btn" />
+        </form>
+      </div>
+   
+
+         <!-- ready to talk -->
+        <div class="ready_container ready-pr">
+
+            <div class="ready_container_wrapper">
+              <h4>Stay in touch</h4>
+              <h1>Ready to talk</h1>
+              <p>Feel free to contact us</p>
+      
+              <a href="#">contact us</a>
+            </div>
+          </div>
+
+            <!-- footer -->
+    <div class="footer_container">
+        <div class="footer">
+          <div class="footer_left">
+            <h1>Orxin</h1>
+            <p>Orxin is an award UI/UX designs and branding agency based in New York, USA.</p>
+            <ul class="footer_list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Style guide</a></li>
+              <li><a href="#">Licencing</a></li>
+              <li><a href="#">instructions</a></li>
+            </ul>
+          </div>
+          <div class="footer_right">
+            <div class="footer_socials">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-slack"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+  
+            <div class="footer_contact_number">
+              <p>hello@orxin.io</p>
+              <p> +1 (004) 214 5700</p>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./js/project.js"></script>
+</body>
+
+</html>

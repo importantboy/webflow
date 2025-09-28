@@ -1,0 +1,164 @@
+.ham-lines {
+    div {
+        transition-property: transform;
+        transition: 0.3s ease;
+        transform-style: preserve-3d;
+    }
+}
+
+.menu-wrap {
+    div {
+        transition: 0.3s linear;
+    }
+}
+
+.rotate1 {
+    transform-style: preserve-3d;
+    transform: translate3d(0px, 6px, 0px) rotateZ(50deg);
+}
+
+.rotate2 {
+    transform-style: preserve-3d;
+    transform: translate3d(0px, -6px, 0px) rotateZ(-50deg);
+}
+
+.nav-items {
+    transition: 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateZ(-3000px);
+
+    ul {
+        transition: .5s ease;
+
+        li {
+            transition: .5s ease;
+        }
+
+        li:hover {
+            transition: 0.5s ease;
+            transform: translateX(10px);
+
+            a {
+                transition: 0.5s ease;
+                color: hsla(0, 0%, 100%, 0.4);
+            }
+        }
+    }
+}
+
+
+
+.nav-socials-icons {
+    transition: 0.8s ease;
+      
+      a:hover{
+        transition: 0.2s ease;
+        opacity: 0.5;
+      }
+}
+
+.nav-social {
+    transition: 0.8s ease;
+}
+
+.openmenu {
+    transform: translate3d(0px, -100%, 0px);
+}
+
+.closemenu {
+    transform: translate3d(0px, -100%, 0px);
+}
+
+.openlist {
+    transform: translateZ(0px);
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s ease;
+    
+}
+
+.slideup {
+    transform: translate3d(0px, -10px, 0px);
+    transition-delay: 0.2s;
+}
+
+.s-medianav{
+      a{
+            transition: 0.5s ease;
+      }     
+    a:hover{
+        transition: 0.5s ease;
+        opacity: 0.5;
+    }
+}
+.uptrans{
+     transition: 0.5s ease;
+}
+
+
+
+.rotateanime {
+      animation: fake 2.5s infinite;
+    
+}
+
+@keyframes fake{
+      0%{
+            opacity: 0;
+             transform: translateY(-40px);
+            
+        }
+          
+      90%{
+        opacity: 1;
+        transform: translateY(-12%);
+        
+      }
+      100%{
+        opacity: 0;
+        transform: translateY(30px);
+      
+      }
+}
+#mouse-svg{
+    transition: 1s ease;
+     transition-property: all; 
+}
+
+.mouse-outer{ 
+       stroke-dashoffset: -110;
+      stroke-dasharray: 110;
+      animation:mouseanimate 1s infinite ease backwards;
+     
+}
+.mouse-scroll{
+   animation: scrollmouse 1.5s infinite ease-out reverse; 
+   transform-style: preserve-3d;
+}
+
+
+@keyframes mouseanimate{
+    100%{
+          stroke-dashoffset: 0;
+    }
+
+}
+
+@keyframes scrollmouse{
+      50%{
+            transform: translateY(0%);
+      }
+      100%{
+             
+            transform: translateY(40%);
+      }
+}
+
+
+.signrotate{
+    transform:rotate(-0deg) translateY(-2px) ;
+}
+.animatefixedbtn{
+    transform:rotate(-90deg)  translate(0px,0px);
+}
